@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Binscup-web
+    </title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/css/stysheet.css">
+    <link
+      href="./dist/css/tabler-payments.min.css?1684106062"
+      rel="stylesheet"
+    />
+    <link
+      href="./dist/css/tabler-vendors.min.css?1684106062"
+      rel="stylesheet"
+    />
+    <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet" />
+    <style>
+      @import url("https://rsms.me/inter/inter.css");
+      :root {
+        --tblr-font-sans-serif: "Inter Var", -apple-system, BlinkMacSystemFont,
+          San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+        font-feature-settings: "cv03", "cv04", "cv11";
+      }
+    </style>
+  </head>
+  <body>
+<script src="./dist/js/demo-theme.min.js?1684106062"></script>
+<!--  -->
+
+<!-- navbar -->
+<header class="navbar navbar-expand-md d-print-none" data-bs-theme="dark">
+                  <div class="container-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                     <a href="." style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">
+             <b>Binscup</b>    
+            </a>
+          </h1>
+          <div class="navbar-nav flex-row order-md-last">
+            <div class="d-none d-md-flex">
+              <a
+                href="?theme=dark"
+                class="nav-link px-0 hide-theme-dark"
+                title="Enable dark mode"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              >
+                <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="?theme=light"
+                class="nav-link px-0 hide-theme-light"
+                title="Enable light mode"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              >
+                <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                  <path
+                    d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+                  />
+                </svg>
+              </a>
+             
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link d-flex lh-1 text-reset p-0"
+                data-bs-toggle="dropdown"
+                aria-label="Open user menu"
+              >
+                <span
+                  class="avatar avatar-sm"
+                  style="background-image: url(./picture/DSC_0424\ \(2\).JPG)"
+                ></span>
+                <div class="d-none d-xl-block ps-2">
+                  <div>Bintang Rizki</div>
+                  <div class="mt-1 small text-muted">Web Developer</div>
+                </div>
+              </a>
+             
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <div
+              class="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center"
+            >
+              <ul class="navbar-nav" style="margin-left: 16px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">
+                    <span class="nav-link-icon d-md-none d-lg-inline-block"
+                      ><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                      </svg>
+                    </span>
+                    <span class="nav-link-title"> Home </span>
+                  </a>     
+                </li>          
+                <li class="nav-item ">
+                  <a
+                    class="nav-link dropdown"
+                    href="galerry.html"
+                   
+                  >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block"
+                      ><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
+                        <path d="M12 12l8 -4.5" />
+                        <path d="M12 12l0 9" />
+                        <path d="M12 12l-8 -4.5" />
+                        <path d="M16 5.25l-8 4.5" />
+                      </svg>
+                    </span>
+                    <span class="nav-link-title"> Galerry </span>
+                  </a>         
+                </li>               
+                <li class="nav-item ">
+                  <a
+                    class="nav-link "
+                    href="contact.html"
+                    
+                  >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block"
+                      ><!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M15 15l3.35 3.35" />
+                        <path d="M9 15l-3.35 3.35" />
+                        <path d="M5.65 5.65l3.35 3.35" />
+                        <path d="M18.35 5.65l-3.35 3.35" />
+                      </svg>
+                    </span>
+                    <span class="nav-link-title"> Contact </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+                </header>
+<!-- navbar -->
+  <!-- Content of table -->
+<div class="page-wrapper">
+        <!-- Page header -->
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h2 class="page-title">
+                  Gallery
+                </h2>
+                
+              </div>
+              <!-- Page title actions -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="row row-cards">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-sm">
+                  <a href="#" class="d-block"><img src="./picture/crowd-funding-apps.png" class="card-img-top"></a>
+       
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-sm">
+                  <a href="#" class="d-block"><img src="./picture/ecommerce-apps.png" class="card-img-top"></a>
+      
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-sm">
+                  <a href="#" class="d-block"><img src="./picture/cms-apps-tudent.png" class="card-img-top"></a>
+                  
+                </div>
+              </div>
+             
+            </div>
+          
+          </div>
+        </div>
+        
+      </div>
+<!-- Content of table -->
+  <hr>
+<!-- example apps -->
+
+<div class="container text-center">
+  <div class="row row-cards">
+    <div class="col">
+      <div class="row q">
+                  <div class="col-6">
+                    <a data-fslightbox="gallery" href="./picture/crowd-funding2.png">
+                      <!-- Photo -->
+                      <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/crowd-funding2.png)"></div>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <div class="row g-2 g-md-3">
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/crowd-fuunding1.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/crowd-fuunding1.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/Screenshot 2023-08-26 232220.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/Screenshot\ 2023-08-26\ 232220.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/about-crowdfunding.png ">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/about-crowdfunding.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/we-have-extra.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/we-have-extra.png)"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+    </div>
+    <div class="col-lg-6 " style="margin-top: 40px; " >
+      <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: right;">Crowd Funding</h1>
+      <div class="paragraf" style="text-align: right;">
+        crowd funding is one of the online-based applications  or commonly referred to as a website that I have created  using wordpres and equipped with qualified features, not only donating and we can also see <br> the company profile of the web. 
+      </div>
+      <br>
+   <button style="float: right;">
+    <p><a href="Visit.html" style="text-decoration: none;">Details</a></p>
+    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+    </svg>
+</button>
+
+    </div>
+  </div>
+<!-- example apps -->
+<hr>
+<br>
+<br>
+<div class="bg"></div>
+<!-- ecoommerce -->
+<div class="container text-center">
+  <div class="row row-cards">
+    <div class="col">
+      <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: left;">E-commerce</h1>
+      <div class="paragraf" style="text-align: left;">
+       One of the webs that I created is ecommerce, which is where this web is made for an online website sales platform and already has a dynamic system using WordPress CMS.
+      </div>
+      <br>
+ <button>
+    <p>Details</p>
+    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+    </svg>
+</button>
+    </div>
+    <div class="col-lg-6">
+     <div class="row g-2 g-md-3">
+                  <div class="col-6">
+                    <div class="row g-2 g-md-3">
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/landingpage-2.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/landingpage-2.png )"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/ecommerce-newarival.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/ecommerce-newarival.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/shop.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/shop.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/wihlist.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/wihlist.png)"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <a data-fslightbox="gallery" href="./picture/add-to-chart.png">
+                      <!-- Photo -->
+                      <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/add-to-chart.png)"></div>
+                    </a>
+                  </div>
+          
+                </div>
+    </div>
+  </div>
+<!-- ecoommerce -->
+<hr >
+<br>
+<br>
+<!-- cms apps -->
+<div class="container text-center">
+  <div class="row row-cards">
+    <div class="col">
+      <div class="row q">
+                 
+                  <div class="col-6">
+                    <a data-fslightbox="gallery" href="./picture/signup.png">
+                      <!-- Photo -->
+                      <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/signup.png)"></div>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <div class="row g-2 g-md-3">
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/login.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/login.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/dashboard.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/dashboard.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/crud.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/crud.png)"></div>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a data-fslightbox="gallery" href="./picture/form-data.png">
+                          <!-- Photo -->
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/form-data.png)"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+    </div>
+    <div class="col-lg-6 " style="margin-top: 40px; " >
+      <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: right;">CMS-APPS</h1>
+      <div class="paragraf" style="text-align: right;">
+       This CMS application is an online-based application where I made this using the Laravel framework, of course the features available are the CRUD system (Crud, Read, Update, Delete), and also the default features are sidebar and dashboard, and there is a mode for guests. 
+      </div>
+      <br>
+   <button style="float: right;">
+    <p>Details</p>
+    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+    </svg>
+</button>
+    </div>
+  </div>
+<!-- cms apps -->
+<script src="./dist/js/tabler.min.js?1684106062" defer></script>
+<script src="./dist/js/demo.min.js?1684106062" defer></script>
+</script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("./picture/maik-jonietz-nZcMWOKAJrY-unsplash.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* button-crowd_funding */
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  
+}
+
+button {
+  --primary-color: #1b97bd;
+  --hovered-color: #1e376f;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color)
+}
+
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+button p::before {
+  position: absolute;
+/*   box-sizing: border-box; */
+  content: "Details";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+button:hover p::before {
+  width: 100%;
+}
+
+button:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color)
+}
+
+button svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}               
+/* button-crowd_funding */               
+        </style>
+</style>
+  </body>
+</html>
